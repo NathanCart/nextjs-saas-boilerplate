@@ -203,7 +203,7 @@ export default function Home() {
 			</MarketingSection>
 
 			<MarketingSection>
-				<h2 className="w-full text-start md:text-center font-semibold text-2xl md:text-4xl lg:text-5xl lg:text-center text-primary">
+				<h2 className="w-full text-start md:text-center font-bold text-2xl md:text-4xl lg:text-5xl lg:text-center text-primary">
 					Get setup in 3 easy steps
 				</h2>
 			</MarketingSection>
@@ -212,11 +212,10 @@ export default function Home() {
 				<ParallaxContent
 					title="Step 1 - Signup to SaaSphere"
 					description="Sign up for a SaaSphere account to get started, and then select the plan that fits your needs best."
-					image="https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/advanced-analytics.webp"
-					imageCover
+					image="https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/signup-to-get-started.svg"
 					actions={
 						<Link href="/auth/register">
-							<Button className="w-fit">Get started</Button>
+							<Button className="w-fit">Signup to SaaSphere</Button>
 						</Link>
 					}
 				/>
@@ -224,9 +223,10 @@ export default function Home() {
 
 			<MarketingSection disablePaddingTop>
 				<ParallaxContent
+					reverse
 					title="Step 2 - Clone your SaaSphere repository"
 					description="Follow the instructions in the documentation to clone your SaaSphere repository and set up your environment."
-					image="https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/advanced-analytics.webp"
+					image="https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/clone-your-repo.svg"
 					imageCover
 					actions={
 						<Link href="/docs">
@@ -242,7 +242,7 @@ export default function Home() {
 				<ParallaxContent
 					title="Step 3 - Ship your SaaS in record time"
 					description="With SaaSphere, you can focus on building your product and growing your business, saving you up to 200+ hours of development time. We have extensive documentation to support your deployment and customisation."
-					image="https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/advanced-analytics.webp"
+					image="https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/launch.svg"
 					imageCover
 					actions={
 						<div className="flex flex-row gap-4 flex-wrap">

@@ -58,14 +58,14 @@ export function ParallaxContent(props: ParallaxContentProps) {
 
 							<m.div
 								style={{ opacity: imageOpacity, y: imageScrollOut }}
-								className="flex-1 rounded-2xl border-2   border-border w-full"
+								className="flex-1 rounded-2xl  w-full aspect-video"
 							>
 								<Image
 									src={props.image}
 									alt={`${props.title} image`}
 									width={1000}
 									height={600}
-									className={`rounded-2xl h-full w-full ${
+									className={` rounded-2xl  w-full ${
 										props.imageCover ? 'object-cover' : 'object-contain'
 									}`}
 								/>
