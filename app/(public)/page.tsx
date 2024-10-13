@@ -202,7 +202,7 @@ export default function Home() {
 				/>
 			</MarketingSection>
 
-			<MarketingSection disablePaddingBottom>
+			<MarketingSection>
 				<h2 className="w-full text-start md:text-center font-semibold text-2xl md:text-4xl lg:text-5xl lg:text-center text-primary">
 					Get setup in 3 easy steps
 				</h2>
@@ -216,9 +216,7 @@ export default function Home() {
 					imageCover
 					actions={
 						<Link href="/auth/register">
-							<Button size="lg" className="w-fit">
-								Get started
-							</Button>
+							<Button className="w-fit">Get started</Button>
 						</Link>
 					}
 				/>
@@ -247,14 +245,16 @@ export default function Home() {
 					image="https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/advanced-analytics.webp"
 					imageCover
 					actions={
-						<div className="flex flex-row gap-4">
-							<Link href="/docs">
-								<Button variant="secondary" className="w-fit">
-									Read the documentation
+						<div className="flex flex-row gap-4 flex-wrap">
+							<Link className="w-full sm:w-fit" href="/auth/register">
+								<Button className="w-full sm:w-fit">
+									Start your journey today
 								</Button>
 							</Link>
-							<Link href="/auth/register">
-								<Button className="w-fit">Start your journey today</Button>
+							<Link className="w-full sm:w-fit" href="/docs">
+								<Button variant="secondary" className="w-full sm:w-fit">
+									Read the documentation
+								</Button>
 							</Link>
 						</div>
 					}
