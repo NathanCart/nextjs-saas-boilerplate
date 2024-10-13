@@ -1,6 +1,6 @@
 {
-  "id": "eaf3b577-45cb-441d-857b-b4d485d8e1b6",
-  "prevId": "f375833b-0e10-411a-ae1c-52ecb39aaa08",
+  "id": "49bc0b4e-a651-4e89-b7a6-e3b144a6b933",
+  "prevId": "c9645a61-796c-4330-b425-9b552e5d946e",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -138,6 +138,56 @@
       },
       "uniqueConstraints": {}
     },
+    "public.Bug": {
+      "name": "Bug",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "createdAt": {
+          "name": "createdAt",
+          "type": "timestamp (3)",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "images": {
+          "name": "images",
+          "type": "text[]",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'{}'::text[]"
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'OPEN'"
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "comment": {
+          "name": "comment",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
     "public.ConciergeToken": {
       "name": "ConciergeToken",
       "schema": "",
@@ -179,12 +229,13 @@
           "primaryKey": false,
           "notNull": true
         },
-        "role": {
-          "name": "role",
+        "TeamRole": {
+          "name": "TeamRole",
           "type": "TeamRole",
           "typeSchema": "public",
           "primaryKey": false,
-          "notNull": true
+          "notNull": true,
+          "default": "'USER'"
         }
       },
       "indexes": {
@@ -296,7 +347,7 @@
           "name": "endDate",
           "type": "timestamp (3)",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "planId": {
           "name": "planId",
@@ -321,6 +372,13 @@
           "type": "boolean",
           "primaryKey": false,
           "notNull": true
+        },
+        "type": {
+          "name": "type",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'subscription'"
         }
       },
       "indexes": {
@@ -616,8 +674,8 @@
           "notNull": true,
           "default": "CURRENT_TIMESTAMP"
         },
-        "archivedAt": {
-          "name": "archivedAt",
+        "endsAt": {
+          "name": "endsAt",
           "type": "timestamp (3)",
           "primaryKey": false,
           "notNull": false
@@ -670,29 +728,27 @@
           "primaryKey": false,
           "notNull": false
         },
-        "userId": {
-          "name": "userId",
+        "email": {
+          "name": "email",
           "type": "text",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
+        },
+        "deviceType": {
+          "name": "deviceType",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "converted": {
+          "name": "converted",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
         }
       },
       "indexes": {},
-      "foreignKeys": {
-        "Session_userId_User_id_fk": {
-          "name": "Session_userId_User_id_fk",
-          "tableFrom": "Session",
-          "tableTo": "User",
-          "columnsFrom": [
-            "userId"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        }
-      },
+      "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {}
     },
@@ -801,8 +857,8 @@
           "primaryKey": false,
           "notNull": true
         },
-        "role": {
-          "name": "role",
+        "TeamRole": {
+          "name": "TeamRole",
           "type": "TeamRole",
           "typeSchema": "public",
           "primaryKey": false,
@@ -1087,6 +1143,13 @@
           "notNull": false,
           "default": "CURRENT_TIMESTAMP"
         },
+        "lastLogin": {
+          "name": "lastLogin",
+          "type": "timestamp (3)",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "CURRENT_TIMESTAMP"
+        },
         "notificationsEnabled": {
           "name": "notificationsEnabled",
           "type": "boolean",
@@ -1321,7 +1384,17 @@
       "uniqueConstraints": {}
     }
   },
-  "enums": {},
+  "enums": {
+    "public.TeamRole": {
+      "name": "TeamRole",
+      "schema": "public",
+      "values": [
+        "OWNER",
+        "ADMIN",
+        "USER"
+      ]
+    }
+  },
   "schemas": {},
   "sequences": {},
   "_meta": {

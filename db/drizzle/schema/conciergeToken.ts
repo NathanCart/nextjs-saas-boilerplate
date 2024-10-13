@@ -1,6 +1,6 @@
 import { InferSelectModel, sql } from 'drizzle-orm';
 import { index, pgTable, text, timestamp, uniqueIndex } from 'drizzle-orm/pg-core';
-import { teamRole } from './team';
+import { teamRole } from './teamMember';
 
 export const conciergeToken = pgTable(
 	'ConciergeToken',
@@ -14,7 +14,7 @@ export const conciergeToken = pgTable(
 		teamId: text('teamId').notNull(),
 		email: text('email').notNull(),
 		name: text('name').notNull(),
-		role: teamRole('role').notNull(),
+		role: teamRole('TeamRole').default('USER').notNull(),
 	},
 	(table) => {
 		return {

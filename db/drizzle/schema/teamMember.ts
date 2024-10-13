@@ -1,13 +1,23 @@
 import { InferSelectModel, relations, sql } from 'drizzle-orm';
-import { foreignKey, index, pgTable, primaryKey, text, timestamp } from 'drizzle-orm/pg-core';
+import {
+	foreignKey,
+	index,
+	pgEnum,
+	pgTable,
+	primaryKey,
+	text,
+	timestamp,
+} from 'drizzle-orm/pg-core';
+import { team } from './team';
 import { user } from './user';
-import { team, teamRole } from './team';
+
+export const teamRole = pgEnum('TeamRole', ['OWNER', 'ADMIN', 'USER']);
 export const teamMember = pgTable(
 	'TeamMember',
 	{
 		teamId: text('teamId').notNull(),
 		userId: text('userId').notNull(),
-		role: teamRole('role').default('USER').notNull(),
+		role: teamRole('TeamRole').default('USER').notNull(),
 		createdAt: timestamp('createdAt', { precision: 3, mode: 'date' })
 			.default(sql`CURRENT_TIMESTAMP`)
 			.notNull(),

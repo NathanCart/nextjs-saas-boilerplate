@@ -1,14 +1,14 @@
 export { account, accountRelations } from './account';
+export { team, teamRelations } from './team';
 export { bug } from './bug';
 export { conciergeToken } from './conciergeToken';
 export { customer, customerRelations } from './customer';
 export { customerInvoice, customerInvoiceRelations } from './customerInvoice';
 export { passwordResetToken } from './passwordResetToken';
 export { session } from './session';
-export { team, teamRelations } from './team';
-export { teamMember, teamMemberRelations } from './teamMember';
+export { teamMember, teamMemberRelations, teamRole } from './teamMember';
 export { twoFactorConfirmation, twoFactorConfirmationRelations } from './twoFactorConfirmation';
 export { twoFactorToken } from './twoFactorToken';
-export { user, userRelations } from './user';
+export { user, userRelations, userRole } from './user';
 export { userNotification, userNotificationRelations } from './userNotification';
 export { verificationToken } from './verificationToken';
