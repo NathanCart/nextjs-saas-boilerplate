@@ -221,7 +221,7 @@ export default function Home() {
 					<ParallaxContent
 						reverse
 						title="Step 2 - Clone your SaaSphere repository"
-						description="Follow the step by step setup guide in our documentation to clone your SaaSphere NextJS SaaS boilerplate repository and set up your environments. There are guides for local setup, and production setup. It really is that simple!"
+						description="Follow our step-by-step guide to clone your SaaSphere NextJS SaaS boilerplate and set up your environments. We provide instructions for both local and production setups. It's that simple!"
 						image="https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/clone-your-repo.svg"
 						imageCover
 						actions={
@@ -238,19 +238,18 @@ export default function Home() {
 				<MarketingSection disablePaddingTop>
 					<ParallaxContent
 						title="Step 3 - Ship your SaaS in record time"
-						description="With SaaSphere NextJS SaaS boilerplate, you can focus on building your product and growing your business, saving you up to 200+ hours of development time. We have extensive documentation to support your deployment and customisation."
+						description="
+SaaSphere NextJS SaaS boilerplate saves you 200+ hours of development time, letting you focus on your product. Extensive documentation is available for deployment and customization."
 						image="https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/launch.svg"
 						imageCover
 						actions={
-							<div className="flex flex-row gap-4 flex-wrap">
-								<Link className="w-full sm:w-fit" href="/auth/register">
-									<Button className="w-full sm:w-fit">
-										Start your journey today
-									</Button>
+							<div className="flex flex-row gap-4">
+								<Link className="w-1/2 sm:w-fit" href="/auth/register">
+									<Button className="w-full sm:w-fit">Get started</Button>
 								</Link>
-								<Link className="w-full sm:w-fit" href="/docs">
+								<Link className="w-1/2 sm:w-fit" href="/docs">
 									<Button variant="secondary" className="w-full sm:w-fit">
-										Read the documentation
+										Read the docs
 									</Button>
 								</Link>
 							</div>

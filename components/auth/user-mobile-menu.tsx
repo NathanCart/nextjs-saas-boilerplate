@@ -16,7 +16,9 @@ import {
 } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { ReportBugDialog } from '../dialogs/report-bug-dialog';
+import { NAVBAR_ITEMS } from '../layout/navbar';
+import { NotificationsIcon } from '../notifications-icon';
 import { Button } from '../ui/button';
 import {
 	DropdownMenu,
@@ -28,10 +30,6 @@ import {
 	DropdownMenuTrigger,
 } from '../ui/dropdown-menu';
 import { LogoutButton } from './logout-button';
-import { NAVBAR_ITEMS } from '../layout/navbar';
-import { LoginButton } from './login-button';
-import { NotificationsIcon } from '../notifications-icon';
-import { ReportBugDialog } from '../dialogs/report-bug-dialog';
 
 interface UserMobileMenuProps {
 	user: ExtendedUser | undefined;
@@ -77,6 +75,7 @@ export function UserMobileMenu(props: UserMobileMenuProps) {
 			<DropdownMenu onOpenChange={(open) => props.onNavOpenChange(open)}>
 				<DropdownMenuTrigger asChild className="cursor-pointer">
 					<Button
+						className="dark:text-white text-black"
 						aria-label="Open user menu"
 						onClick={() => props.onNavOpenChange(!props.navOpen)}
 						variant="link"
