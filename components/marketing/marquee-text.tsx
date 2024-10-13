@@ -15,7 +15,7 @@ export function MarqueeText(props: MarqueeTextProps) {
 				return (
 					<p
 						key={index}
-						className={`text-3xl md:text-4xl lg:text-6xl mx-4 md:mx-8 ${
+						className={`text-3xl font-semibold md:text-4xl lg:text-6xl mx-4 md:mx-8 ${
 							isEven ? 'text-primary/80' : ''
 						}`}
 					>
