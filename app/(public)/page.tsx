@@ -202,24 +202,37 @@ export default function Home() {
 				/>
 			</MarketingSection>
 
+			<MarketingSection disablePaddingBottom>
+				<h2 className="w-full text-start md:text-center font-semibold text-2xl md:text-4xl lg:text-5xl lg:text-center text-primary">
+					Get setup in 3 easy steps
+				</h2>
+			</MarketingSection>
+
 			<MarketingSection className="mt-60 md:mt-40">
 				<ParallaxContent
-					title="Enter a title for this section, such as 'Advanced Analytics'"
-					description="Provide a brief description of the content in this section. This could be a feature, benefit, or use case of your product or service."
+					title="Step 1 - Signup to SaaSphere"
+					description="Sign up for a SaaSphere account to get started, and then select the plan that fits your needs best."
 					image="https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/advanced-analytics.webp"
 					imageCover
+					actions={
+						<Link href="/auth/register">
+							<Button size="lg" className="w-fit">
+								Get started
+							</Button>
+						</Link>
+					}
 				/>
 			</MarketingSection>
 
 			<MarketingSection disablePaddingTop>
 				<ParallaxContent
-					title="Enter a title for this section, such as 'User Management'"
-					description="Provide a brief description of the content in this section. This could be a feature, benefit, or use case of your product or service."
+					title="Step 2 - Clone your SaaSphere repository"
+					description="Follow the instructions in the documentation to clone your SaaSphere repository and set up your environment."
 					image="https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/advanced-analytics.webp"
 					imageCover
 					actions={
 						<Link href="/docs">
-							<Button variant="outline" className="w-fit">
+							<Button variant="secondary" className="w-fit">
 								Read the documentation
 							</Button>
 						</Link>
@@ -229,14 +242,21 @@ export default function Home() {
 
 			<MarketingSection disablePaddingTop>
 				<ParallaxContent
-					title="Enter a title for this section, such as 'Invoice Management'"
-					description="Provide a brief description of the content in this section. This could be a feature, benefit, or use case of your product or service."
+					title="Step 3 - Ship your SaaS in record time"
+					description="With SaaSphere, you can focus on building your product and growing your business, saving you up to 200+ hours of development time. We have extensive documentation to support your deployment and customisation."
 					image="https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/advanced-analytics.webp"
 					imageCover
 					actions={
-						<Link href="/auth/register">
-							<Button className="w-fit">Start your journey today</Button>
-						</Link>
+						<div className="flex flex-row gap-4">
+							<Link href="/docs">
+								<Button variant="secondary" className="w-fit">
+									Read the documentation
+								</Button>
+							</Link>
+							<Link href="/auth/register">
+								<Button className="w-fit">Start your journey today</Button>
+							</Link>
+						</div>
 					}
 				/>
 			</MarketingSection>
