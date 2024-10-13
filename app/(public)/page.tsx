@@ -290,7 +290,7 @@ export default function Home() {
 							image: 'https://element-landing-tina.s3.eu-west-2.amazonaws.com/Team/reuben-restrop.png',
 							name: 'Reuben Westrop',
 							subtitle: 'CEO of Iron Brand',
-							quote: `"Thanks to the SaaSphere NextJS SaaS boilerplate, we've been able to save a tremendous amount of development time. It's an ideal solution to begin any SaaS project."`,
+							quote: `"SaaSphere has streamlined the development of my project, not only providing a solid foundation for my business, but allowing me to focus on managing my business."`,
 						},
 					]}
 				/>
@@ -337,7 +337,7 @@ export default function Home() {
 
 			<MarketingSection fadeSides disablePaddingTop disablePaddingBottom>
 				<MarqueeText
-					text={['Ship', 'Your', 'Next', 'SaaS', 'Today', 'In', 'Record', 'Time']}
+					text={['Ship', 'Your', 'Next', 'SaaS', 'In', 'Record', 'Time']}
 					direction="left"
 				/>
 			</MarketingSection>

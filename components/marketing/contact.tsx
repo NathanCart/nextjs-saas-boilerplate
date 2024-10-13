@@ -1,16 +1,15 @@
 'use client';
 
-import { Controller, SubmitHandler, useForm } from 'react-hook-form';
+import { ContactSchema } from '@/schemas';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import * as z from 'zod';
+import { FormInput } from '../auth/form-input';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
-import { Input } from '../ui/input';
-import { FormInput } from '../auth/form-input';
 import { Form } from '../ui/form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { ContactSchema } from '@/schemas';
-import * as z from 'zod';
+import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
-import Image from 'next/image';
 
 interface ContactProps {
 	title: string;
@@ -128,9 +127,9 @@ export function Contact(props: ContactProps) {
 			</Form>
 
 			<div
-				className="lg:h-full w-full object-cover rounded-lg  h-60 bg-bottom order-1 lg:order-2 bg-cover bg-black opacity-85"
+				className="lg:h-full hidden lg:block w-full bg-no-repeat bg-center bg-primary rounded-lg  h-60 order-1 lg:order-2 bg-contain bg-black opacity-85"
 				style={{
-					backgroundImage: `url('/images/auth/auth-layout-image-2.webp')`,
+					backgroundImage: `url('https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/contact-image.svg')`,
 				}}
 			/>
 		</section>

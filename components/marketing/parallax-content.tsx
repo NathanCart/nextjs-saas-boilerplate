@@ -38,7 +38,7 @@ export function ParallaxContent(props: ParallaxContentProps) {
 					<div className="relative">
 						<section
 							className={`flex flex-col-reverse gap-2 sm:gap-8 items-center ${
-								props.reverse ? 'md:flex-row-reverse' : 'lg:flex-row'
+								props.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'
 							}`}
 						>
 							<m.div
