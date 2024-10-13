@@ -1,5 +1,5 @@
-import { Contact } from '@/components/marketing/contact';
 import { CallToAction } from '@/components/marketing/call-to-action';
+import { Contact } from '@/components/marketing/contact';
 import { Content } from '@/components/marketing/content';
 import { FrequentlyAskedQuestions } from '@/components/marketing/frequently-asked-questions';
 import { Header } from '@/components/marketing/header';
@@ -9,15 +9,13 @@ import { MarketingSlider } from '@/components/marketing/marketing-slider';
 import { MarqueeText } from '@/components/marketing/marquee-text';
 import { ParallaxContent } from '@/components/marketing/parallax-content';
 import { Pricing } from '@/components/marketing/pricing';
-import { Testimonials } from '@/components/marketing/testimonials';
+import { Testimonial } from '@/components/marketing/testimonial';
 import { Button } from '@/components/ui/button';
-import { DUMMY_FAQS, DUMMY_TESTIMONIALS } from '@/lib/dummy-data';
 import plans from '@/plans.json';
 import { formatDuration, intervalToDuration } from 'date-fns';
-import { ChartArea, Fingerprint, Goal, Layers, LayoutDashboard, Pointer } from 'lucide-react';
+import { ChartArea, Layers, LayoutDashboard } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Testimonial } from '@/components/marketing/testimonial';
 
 export default function Home() {
 	let duration = intervalToDuration({
@@ -84,36 +82,28 @@ export default function Home() {
 					}}
 					slides={[
 						{
-							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/invoice-management.webp',
-							alt: 'Invoice management',
+							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/authentication.webp',
+							alt: 'Authentication',
 						},
 						{
-							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/auth.webp',
-							alt: 'Authentication systems',
+							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/admin-analytics.webp',
+							alt: 'Admin panel',
 						},
 						{
-							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/advanced-analytics.webp',
-							alt: 'Advanced analytics',
+							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/and-more.webp',
+							alt: 'And more',
 						},
 						{
-							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/user-management.webp',
-							alt: 'User management',
+							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/authentication.webp',
+							alt: 'Authentication',
 						},
 						{
-							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/invoice-management.webp',
-							alt: 'Invoice management',
+							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/admin-analytics.webp',
+							alt: 'Admin panel',
 						},
 						{
-							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/auth.webp',
-							alt: 'Authentication systems',
-						},
-						{
-							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/advanced-analytics.webp',
-							alt: 'Advanced analytics',
-						},
-						{
-							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/user-management.webp',
-							alt: 'User management',
+							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/and-more.webp',
+							alt: 'And more',
 						},
 					]}
 				/>
