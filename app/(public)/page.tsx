@@ -14,7 +14,7 @@ import { Button } from '@/components/ui/button';
 import { DUMMY_FAQS, DUMMY_TESTIMONIALS } from '@/lib/dummy-data';
 import plans from '@/plans.json';
 import { formatDuration, intervalToDuration } from 'date-fns';
-import { ChartArea, Goal, Pointer } from 'lucide-react';
+import { ChartArea, Fingerprint, Goal, Layers, LayoutDashboard, Pointer } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -32,10 +32,10 @@ export default function Home() {
 		<main className="flex h-full flex-col ">
 			<MarketingSection className="pb-4 md:pb-8 pt-8 md:pt-16">
 				<Header
-					title="Enter a catchy title here with a highlighted section"
-					highlighted="highlighted section"
-					caption="Caption for the header"
-					subtitle="Put a short descriptor or slogan about your product here. This is a good place to explain what your product does and why it's great."
+					title="Bring your SaaS to life in record time with SaaSphere"
+					highlighted="record time"
+					caption="Ship your SaaS in record time"
+					subtitle="The NextJS boilerplate equipped with everything you need to build your SaaS, AI tool, or any web app, and start earning online quickly."
 					buttons={
 						<>
 							<Link className="flex-1 sm:!flex-none" href="/auth/register">
@@ -85,6 +85,10 @@ export default function Home() {
 							alt: 'Invoice management',
 						},
 						{
+							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/auth.webp',
+							alt: 'Authentication systems',
+						},
+						{
 							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/advanced-analytics.webp',
 							alt: 'Advanced analytics',
 						},
@@ -95,6 +99,10 @@ export default function Home() {
 						{
 							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/invoice-management.webp',
 							alt: 'Invoice management',
+						},
+						{
+							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/auth.webp',
+							alt: 'Authentication systems',
 						},
 						{
 							image: 'https://nextjs-saas-boilerplate.s3.us-east-2.amazonaws.com/advanced-analytics.webp',
@@ -121,45 +129,73 @@ export default function Home() {
 
 			<MarketingSection disablePaddingTop>
 				<KeyPointList
-					title="Enter Your Section Title Here"
-					subtitle="Provide a brief description here. Summarize the value or key benefits of your product in a few sentences."
+					title="Ship your SaaS in weeks, not months or years"
+					subtitle="Save up to 200+ hours of development time with SaaSphere, allowing you to focus on building your product and growing your business."
 					keyPoints={[
 						{
-							icon: <Pointer className="size-8 md:size-20" />, // Replace with a relevant Lucide icon, e.g., Target, Rocket, ShieldCheck
+							icon: <LayoutDashboard className="min-w-10 min-h-10  text-primary" />, // Replace with a relevant Lucide icon, e.g., Target, Rocket, ShieldCheck
 							point: (
-								<p className="text-start text-base md:text-xl">
-									Provide a concise description of your first key benefit here.
-									Explain the process, outcome, or unique feature of your product
-									or service in a way that{' '}
-									<span className="font-bold">resonates with your audience.</span>
-								</p>
+								<div>
+									<p className="text-start text-base md:text-xl">
+										SaaSphere comes ready with fully integrated{' '}
+										<span className="font-bold">
+											authentication, user management, and billing systems,
+										</span>{' '}
+										utilising Stripe for seamless{' '}
+										<span className="font-bold">
+											one-time and subscription payments
+										</span>{' '}
+										built in. It also includes a along with a comprehensive{' '}
+										<span className="font-bold">admin panel</span> to manage
+										users and subscriptions effortlessly.
+										<br />
+									</p>
+									<p className="text-primary text-start mt-2">80+ hours saved</p>
+								</div>
 							),
 						},
 						{
-							icon: <Goal className="size-8 md:size-20" />, // Replace with another relevant Lucide icon
+							icon: <Layers className="min-w-10 min-h-10 md:size-20 text-primary" />, // Replace with another relevant Lucide icon
 							point: (
-								<p className="text-start text-base md:text-xl">
-									Provide a description for your second key point. This should
-									focus on a specific advantage, such as{' '}
-									<span className="font-bold">
-										{' '}
-										improved performance, efficiency, or satisfaction{' '}
-									</span>
-									, related to your offering.
-								</p>
+								<div>
+									<p className="text-start text-base md:text-xl">
+										SaaSphere includes a fully functional{' '}
+										<span className="font-bold">landing page</span> to help you
+										get started quickly. It offers optimised{' '}
+										<span className="font-bold">SEO and performance</span> using
+										tools like Semrush and Lighthouse to ensure app stability.
+										It also features a fully{' '}
+										<span className="font-bold">integrated CMS-ready blog</span>
+										, perfect for launching your content marketing.
+									</p>
+
+									<p className="text-primary text-start mt-2">40+ hours saved</p>
+								</div>
 							),
 						},
 						{
-							icon: <ChartArea className="size-8 md:size-20" />, // Replace with a different relevant Lucide icon
+							icon: (
+								<ChartArea className="min-w-10 min-h-10 md:size-20 text-primary" />
+							),
 							point: (
-								<p className="text-start text-base md:text-xl">
-									Describe the final key benefit or unique selling proposition
-									that sets your product apart, ensuring you tie it back to the
-									<span className="font-bold">
-										{' '}
-										customer’s needs and expectations.
-									</span>
-								</p>
+								<div>
+									<p className="text-start text-base md:text-xl">
+										Included in SaaSphere are numerous essential features for
+										every successful SaaS, such as a{' '}
+										<span className="font-bold">
+											complete notification system
+										</span>{' '}
+										with email preferences,{' '}
+										<span className="font-bold">
+											customizable email templates
+										</span>
+										, an extensive{' '}
+										<span className="font-bold">bug reporting system</span> with
+										file uploads and screenshots, and a detailed{' '}
+										<span className="font-bold">documentation system</span>.
+									</p>
+									<p className="text-primary text-start mt-2">40+ hours saved</p>
+								</div>
 							),
 						},
 					]}
