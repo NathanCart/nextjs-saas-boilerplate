@@ -107,6 +107,7 @@
 			{ "feature": "Resend email integration", "active": true },
 			{ "feature": "Stripe one time and subscription payments", "active": true },
 			{ "feature": "Lifetime updates", "active": true },
+
 			{ "feature": "Discord help chat", "active": true }
 		]
 	}
