@@ -8,10 +8,9 @@ import {
 	text,
 	timestamp,
 } from 'drizzle-orm/pg-core';
-import { team } from './team';
+import { team, teamRole } from './team';
 import { user } from './user';
 
-export const teamRole = pgEnum('TeamRole', ['OWNER', 'ADMIN', 'USER']);
 export const teamMember = pgTable(
 	'TeamMember',
 	{

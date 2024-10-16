@@ -2,6 +2,7 @@ import { InferSelectModel, relations, sql } from 'drizzle-orm';
 import { boolean, index, pgEnum, pgTable, text, timestamp } from 'drizzle-orm/pg-core';
 import { customer } from './customer';
 import { teamMember } from './teamMember';
+export const teamRole = pgEnum('TeamRole', ['OWNER', 'ADMIN', 'USER']);
 
 export const team = pgTable(
 	'Team',

@@ -1,5 +1,4 @@
 export { account, accountRelations } from './account';
-export { team, teamRelations } from './team';
 export { bug } from './bug';
 export { conciergeToken } from './conciergeToken';
 export { customer, customerRelations } from './customer';
