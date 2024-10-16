@@ -11,7 +11,7 @@ import { ParallaxContent } from '@/components/marketing/parallax-content';
 import { Pricing } from '@/components/marketing/pricing';
 import { Testimonial } from '@/components/marketing/testimonial';
 import { Button } from '@/components/ui/button';
-import plans from '@/plans.json';
+import plans from '@/plans';
 import { formatDuration, intervalToDuration } from 'date-fns';
 import { ChartArea, Layers, LayoutDashboard } from 'lucide-react';
 import Image from 'next/image';
