@@ -72,7 +72,7 @@
 
 	"starter": {
 		"type": "one-time",
-		"stripePricingId": "price_1Q7LvlLGm4K65Sy9lKYsCFDS",
+		"stripePricingId": "price_1QAbH9CfDHS601tv1M5MqqJX",
 		"name": "Starter",
 		"price": 38.97,
 		"features": [
@@ -92,7 +92,7 @@
 	},
 	"full access": {
 		"type": "one-time",
-		"stripePricingId": "price_1Q7LwRLGm4K65Sy9SrPT6V43",
+		"stripePricingId": "price_1QAbHYCfDHS601tvghVM6zSO",
 		"name": "Full access",
 		"price": 49.99,
 		"features": [
