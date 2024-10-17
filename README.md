@@ -1,7 +1,6 @@
 Create .env file in root directory of project
 
 Misc envs
-local setup: Set NEXT_PUBLIC_APP_URL to http://localhost:3000
 Production setup: Set NEXT_PUBLIC_APP_URL to your base URL
 add AUTH_TRUST_HOST as your root domain e.g https://saasphere.dev
 add NEXTAUTH_URL as the same root domain

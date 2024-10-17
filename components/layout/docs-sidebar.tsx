@@ -1,6 +1,18 @@
 'use client';
 import { Sidebar, SidebarGroup, SidebarItem } from '@/components/layout/sidebar';
-import { AppWindowMac, Code, Columns2, Lightbulb, MenuIcon, XIcon, Zap } from 'lucide-react';
+import {
+	AppWindowMac,
+	Code,
+	Columns2,
+	Cuboid,
+	File,
+	FileScan,
+	Lightbulb,
+	Lock,
+	MenuIcon,
+	XIcon,
+	Zap,
+} from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '../ui/button';
 import { NavigationMobileDrawer } from './navigation-mobile-drawer';
@@ -18,10 +30,33 @@ export function DocsSidebar() {
 					visible: true,
 				},
 				{
-					text: 'Quick start',
-					link: '/docs#quick-start',
+					text: 'Get started',
+					link: '/docs#get-started',
 					icon: <Zap size={20} />,
 					visible: true,
+				},
+				{
+					text: 'Environment variables',
+					link: '/docs#environment-variables',
+					icon: <FileScan size={20} />,
+					visible: true,
+					children: [
+						{
+							text: 'Core',
+							link: '/docs#environment-variables-core',
+							visible: true,
+						},
+						{
+							text: 'Authentication',
+							link: '/docs#environment-variables-auth',
+							visible: true,
+						},
+						{
+							text: 'File management',
+							link: '/docs#environment-variables-file-management`',
+							visible: true,
+						},
+					],
 				},
 			],
 		},
@@ -86,6 +121,7 @@ export function DocsSidebar() {
 										text={item.text}
 										link={item.link}
 										icon={item.icon}
+										children={item.children}
 									/>
 								);
 							})}

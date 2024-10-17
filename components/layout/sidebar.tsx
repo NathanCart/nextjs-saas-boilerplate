@@ -11,12 +11,31 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '../ui/button';
 
+type SideBarItem =
+	| {
+			text: string;
+			link: string;
+			icon?: React.ReactNode;
+			visible: boolean;
+			children?:
+				| {
+						text: string;
+						link: string;
+						icon?: React.ReactNode;
+						visible: boolean;
+				  }[]
+				| undefined;
+	  }[]
+	| undefined;
+
 export interface SidebarItemProps {
+	size?: 'sm' | 'md';
 	link: string;
 	text: string;
 	icon?: React.ReactNode;
 	prefetch?: boolean;
 	onClick?: () => void;
+	children: SideBarItem;
 }
 export function SidebarItem(props: SidebarItemProps) {
 	const { prefetch = true } = props;
@@ -24,23 +43,41 @@ export function SidebarItem(props: SidebarItemProps) {
 
 	const isActive = pathName === props.link;
 	return (
-		<Link
-			href={props.link}
-			prefetch={prefetch}
-			onClick={() => props?.onClick?.()}
-			className="h-9"
-		>
-			<Button
-				size="sm"
-				className={`w-full text-sm justify-start px-4 flex items-center gap-2 ${
-					isActive && 'font-bold'
-				} `}
-				variant={isActive ? 'default' : 'ghost'}
+		<div>
+			<Link
+				href={props.link}
+				prefetch={prefetch}
+				onClick={() => props?.onClick?.()}
+				className="h-9"
 			>
-				{props.icon}
-				{props.text}
-			</Button>
-		</Link>
+				<Button
+					size="sm"
+					className={`w-full  justify-start px-4 flex items-center gap-2 ${
+						isActive && 'font-bold'
+					} 
+					${props.size === 'sm' ? 'text-[0.8rem] h-7 font-normal' : 'text-sm'}
+					`}
+					variant={isActive ? 'default' : 'ghost'}
+				>
+					{props.icon}
+					{props.text}
+				</Button>
+			</Link>
+			{props.children && (
+				<div className="pl-4">
+					{props.children.map((child) => (
+						<SidebarItem
+							size="sm"
+							key={child.link}
+							link={child.link}
+							text={child.text}
+							icon={child.icon}
+							children={child.children}
+						/>
+					))}
+				</div>
+			)}
+		</div>
 	);
 }
 
