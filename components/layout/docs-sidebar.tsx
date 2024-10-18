@@ -53,7 +53,17 @@ export function DocsSidebar() {
 						},
 						{
 							text: 'File management',
-							link: '/docs#environment-variables-file-management`',
+							link: '/docs#environment-variables-file-management',
+							visible: true,
+						},
+						{
+							text: 'Emails setup',
+							link: '/docs#environment-variables-emails',
+							visible: true,
+						},
+						{
+							text: 'Payment/billing setup',
+							link: '/docs#environment-variables-payment',
 							visible: true,
 						},
 					],
