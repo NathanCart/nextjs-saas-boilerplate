@@ -66,6 +66,16 @@ export function DocsSidebar() {
 							link: '/docs#environment-variables-payment',
 							visible: true,
 						},
+						{
+							text: 'Contact form',
+							link: '/docs#environment-variables-contact',
+							visible: true,
+						},
+						{
+							text: 'Blog',
+							link: '/docs#environment-variables-blog',
+							visible: true,
+						},
 					],
 				},
 			],

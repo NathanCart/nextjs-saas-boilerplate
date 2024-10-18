@@ -104,11 +104,11 @@ STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 
 //Stripe subscription prices, these needed based on what payment plan/model you choose.
-//NEXT_PUBLIC_STRIPE_SUB_ONE=
-//NEXT_PUBLIC_STRIPE_SUB_TWO=
-//NEXT_PUBLIC_STRIPE_SUB_THREE=
-//NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=
-//NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=
+NEXT_PUBLIC_STRIPE_SUB_ONE=price_dKSaLsj6PWiaB2
+NEXT_PUBLIC_STRIPE_SUB_TWO=price_4zgLM3mNfOHJiG
+NEXT_PUBLIC_STRIPE_SUB_THREE=price_rrr1THGz1VAOUB
+NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_qvp6fZgKnZLFuv
+NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_WcCPwYfAFSKnqs
 
 #Optional blog and form environment variables, if you do not require a blog or form integration you can leave these blank and remove the relevant frontend code.
 NEXT_PUBLIC_FORM_URL=
@@ -201,12 +201,12 @@ AUTH_TRUST_HOST=http://localhost:3000
 NEXTAUTH_URL=http://localhost:3000
 
 #Authentication and database setup
-AUTH_DRIZZLE_URL=
-AUTH_SECRET=
-GITHUB_CLIENT_ID=
-GITHUB_CLIENT_SECRET=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
+AUTH_DRIZZLE_URL=postgresql://random-user:pass123456@ep-forest-hill-b3x7fg7x-pooler.eu-west-2.aws.neon.tech/random-database?sslmode=require
+AUTH_SECRET=r4nd0m_super_s3cr3t_k3y
+GITHUB_CLIENT_ID=Ty97pkWrmhXDF8yhfho9
+GITHUB_CLIENT_SECRET=1d9824a7e85a8742e29c6cd09e67a103efb8f4c3
+GOOGLE_CLIENT_ID=8064532994112-hqe68lazp87n97kjwo12etpj10p5mp53.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
 `}
 					/>
 					<DocumentationTypography variant="p">
@@ -354,18 +354,18 @@ AUTH_TRUST_HOST=http://localhost:3000
 NEXTAUTH_URL=http://localhost:3000
 
 #Authentication and database setup
-AUTH_DRIZZLE_URL=
-AUTH_SECRET=
-GITHUB_CLIENT_ID=
-GITHUB_CLIENT_SECRET=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
+AUTH_DRIZZLE_URL=postgresql://random-user:pass123456@ep-forest-hill-b3x7fg7x-pooler.eu-west-2.aws.neon.tech/random-database?sslmode=require
+AUTH_SECRET=r4nd0m_super_s3cr3t_k3y
+GITHUB_CLIENT_ID=Ty97pkWrmhXDF8yhfho9
+GITHUB_CLIENT_SECRET=1d9824a7e85a8742e29c6cd09e67a103efb8f4c3
+GOOGLE_CLIENT_ID=8064532994112-hqe68lazp87n97kjwo12etpj10p5mp53.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
 
 #File management setup using AWS S3
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_REGION=
-AWS_BUCKET_NAME=
+AWS_ACCESS_KEY_ID=AKIAZPQRWSXTCHGUVOPN
+AWS_SECRET_ACCESS_KEY=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
+AWS_REGION=us-west-1
+AWS_BUCKET_NAME=random-saas-project-bucket
 `}
 					/>{' '}
 				</DocumentationSection>
@@ -426,21 +426,21 @@ AUTH_TRUST_HOST=http://localhost:3000
 NEXTAUTH_URL=http://localhost:3000
 
 #Authentication and database setup
-AUTH_DRIZZLE_URL=
-AUTH_SECRET=
-GITHUB_CLIENT_ID=
-GITHUB_CLIENT_SECRET=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
+AUTH_DRIZZLE_URL=postgresql://random-user:pass123456@ep-forest-hill-b3x7fg7x-pooler.eu-west-2.aws.neon.tech/random-database?sslmode=require
+AUTH_SECRET=r4nd0m_super_s3cr3t_k3y
+GITHUB_CLIENT_ID=Ty97pkWrmhXDF8yhfho9
+GITHUB_CLIENT_SECRET=1d9824a7e85a8742e29c6cd09e67a103efb8f4c3
+GOOGLE_CLIENT_ID=8064532994112-hqe68lazp87n97kjwo12etpj10p5mp53.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
 
 #File management setup using AWS S3
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_REGION=
-AWS_BUCKET_NAME=
+AWS_ACCESS_KEY_ID=AKIAZPQRWSXTCHGUVOPN
+AWS_SECRET_ACCESS_KEY=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
+AWS_REGION=us-west-1
+AWS_BUCKET_NAME=random-saas-project-bucket
 
 #Email setup using Resend 
-RESEND_API_KEY=
+RESEND_API_KEY=re_9DLWqvYT_A2pjFX8NsxpqeUbJV3oY8tLm
 RESEND_FROM_EMAIL=support@random-saas-project.com 
 //use onboarding@resend.dev if you have not verified a domain on Resend
 `}
@@ -503,11 +503,11 @@ RESEND_FROM_EMAIL=support@random-saas-project.com
 					<CodeBlock
 						language="javascript"
 						code={`
-NEXT_PUBLIC_STRIPE_SUB_ONE=
-NEXT_PUBLIC_STRIPE_SUB_TWO= 
-NEXT_PUBLIC_STRIPE_SUB_THREE=
-NEXT_PUBLIC_STRIPE_ONE_TIME_ONE= 
-NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=
+NEXT_PUBLIC_STRIPE_SUB_ONE=price_dKSaLsj6PWiaB2
+NEXT_PUBLIC_STRIPE_SUB_TWO=price_4zgLM3mNfOHJiG
+NEXT_PUBLIC_STRIPE_SUB_THREE=price_rrr1THGz1VAOUB
+NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_qvp6fZgKnZLFuv
+NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_WcCPwYfAFSKnqs
 `}
 					/>
 					<DocumentationTypography variant="p">
@@ -529,6 +529,44 @@ NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=
 						width={0}
 						height={0}
 					/>
+					<DocumentationTypography variant="h3">
+						Setting up Stripe webhook
+					</DocumentationTypography>
+					<DocumentationTypography variant="h4">Production</DocumentationTypography>
+					<DocumentationTypography variant="p">
+						Stripe webhooks are used to notify your app of events that happen in your
+						Stripe account, such as payments being processed or subscriptions being
+						created. To set up a webhook, follow these steps:
+					</DocumentationTypography>
+					<DocumentationTypography variant="p">
+						On stripe dashboard search for webhooks, create webhook. Add the following
+						endpoint to your production webhook url.
+						<ul className="list-decimal ml-4 ">
+							<li className="ml-4">payment_intent.succeeded</li>
+							<li className="ml-4">customer.subscription.created</li>
+							<li className="ml-4">customer.subscription.updated</li>
+							<li className="ml-4">customer.subscription.deleted</li>
+							<li className="ml-4">invoice.payment_succeeded</li>
+							<li className="ml-4">invoice.payment_failed</li>
+							<li className="ml-4">checkout.session.completed</li>
+						</ul>
+					</DocumentationTypography>
+					<DocumentationTypography variant="p">
+						Press continue and then add your public path to the stripe api route, e.g
+						for me https://saasphere.dev/api/webhooks/stripe. Copy this secret into your
+						deployed STRIPE_WEBHOOK_SECRET
+					</DocumentationTypography>
+					<DocumentationTypography variant="h4">
+						Development/local
+					</DocumentationTypography>
+					<DocumentationTypography variant="p">
+						To test Stripe payments locally, you'll need to install the Stripe CLI. Use
+						the command brew install stripe/stripe-cli/stripe to install it. After that,
+						run stripe login to log in to your account. Once logged in, start the
+						webhook listener by running stripe listen --forward-to
+						http://localhost:3000/api/webhooks/stripe. Copy the webhook secret generated
+						and paste it into the STRIPE_WEBHOOK_SECRET environment variable.
+					</DocumentationTypography>
 
 					<DocumentationTypography variant="p">
 						Your ENV file should now look something like this.
@@ -544,18 +582,18 @@ AUTH_TRUST_HOST=http://localhost:3000
 NEXTAUTH_URL=http://localhost:3000
 
 #Authentication and database setup
-AUTH_DRIZZLE_URL=
-AUTH_SECRET=
-GITHUB_CLIENT_ID=
-GITHUB_CLIENT_SECRET=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
+AUTH_DRIZZLE_URL=postgresql://random-user:pass123456@ep-forest-hill-b3x7fg7x-pooler.eu-west-2.aws.neon.tech/random-database?sslmode=require
+AUTH_SECRET=r4nd0m_super_s3cr3t_k3y
+GITHUB_CLIENT_ID=Ty97pkWrmhXDF8yhfho9
+GITHUB_CLIENT_SECRET=1d9824a7e85a8742e29c6cd09e67a103efb8f4c3
+GOOGLE_CLIENT_ID=8064532994112-hqe68lazp87n97kjwo12etpj10p5mp53.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
 
 #File management setup using AWS S3
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_REGION=
-AWS_BUCKET_NAME=
+AWS_ACCESS_KEY_ID=AKIAZPQRWSXTCHGUVOPN
+AWS_SECRET_ACCESS_KEY=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
+AWS_REGION=us-west-1
+AWS_BUCKET_NAME=random-saas-project-bucket
 
 #Email setup using Resend 
 RESEND_API_KEY=re_9DLWqvYT_A2pjFX8NsxpqeUbJV3oY8tLm
@@ -568,12 +606,165 @@ STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 
 //Stripe subscription prices, these needed based on what payment plan/model you choose.
-NEXT_PUBLIC_STRIPE_SUB_ONE=
-NEXT_PUBLIC_STRIPE_SUB_TWO=
-NEXT_PUBLIC_STRIPE_SUB_THREE=
-//NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=
-//NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=
+NEXT_PUBLIC_STRIPE_SUB_ONE=price_dKSaLsj6PWiaB2
+NEXT_PUBLIC_STRIPE_SUB_TWO=price_4zgLM3mNfOHJiG
+NEXT_PUBLIC_STRIPE_SUB_THREE=price_rrr1THGz1VAOUB
+//NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_qvp6fZgKnZLFuv
+//NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_WcCPwYfAFSKnqs
 
+`}
+					/>
+				</DocumentationSection>
+
+				<DocumentationSection id="environment-variables-contact">
+					<DocumentationTypography variant="h2">
+						Contact form ENV setup
+					</DocumentationTypography>
+					<DocumentationTypography variant="p">
+						SaaSphere NextJS SaaS Boilerplate uses Formbold for contact form management.
+						This is an extremely scalable, cheap and reliable service that is used by
+						many large companies.
+					</DocumentationTypography>
+
+					<DocumentationTypography variant="p">
+						Formbold will connect to the landing pages contact form to forward you
+						emails. Go to{' '}
+						<Link
+							className="underline hover:no-underline text-primary"
+							href="https://formbold.com"
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							https://formbold.com
+						</Link>{' '}
+						, create an account, create a form, go to the integration tab and paste the
+						code into NEXT_PUBLIC_FORM_URL,
+					</DocumentationTypography>
+
+					<DocumentationTypography variant="p">
+						Your ENV file should now look something like this.
+					</DocumentationTypography>
+					<CodeBlock
+						enableLineNumbers
+						lines={['37:38']}
+						language="javascript"
+						code={`
+# .env file
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+AUTH_TRUST_HOST=http://localhost:3000
+NEXTAUTH_URL=http://localhost:3000
+
+#Authentication and database setup
+AUTH_DRIZZLE_URL=postgresql://random-user:pass123456@ep-forest-hill-b3x7fg7x-pooler.eu-west-2.aws.neon.tech/random-database?sslmode=require
+AUTH_SECRET=r4nd0m_super_s3cr3t_k3y
+GITHUB_CLIENT_ID=Ty97pkWrmhXDF8yhfho9
+GITHUB_CLIENT_SECRET=1d9824a7e85a8742e29c6cd09e67a103efb8f4c3
+GOOGLE_CLIENT_ID=8064532994112-hqe68lazp87n97kjwo12etpj10p5mp53.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
+
+#File management setup using AWS S3
+AWS_ACCESS_KEY_ID=AKIAZPQRWSXTCHGUVOPN
+AWS_SECRET_ACCESS_KEY=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
+AWS_REGION=us-west-1
+AWS_BUCKET_NAME=random-saas-project-bucket
+
+#Email setup using Resend 
+RESEND_API_KEY=re_9DLWqvYT_A2pjFX8NsxpqeUbJV3oY8tLm
+RESEND_FROM_EMAIL=support@random-saas-project.com 
+//use onboarding@resend.dev if you have not verified a domain on Resend
+
+#Payment setup using Stripe
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+
+//Stripe subscription prices, these needed based on what payment plan/model you choose.
+NEXT_PUBLIC_STRIPE_SUB_ONE=price_dKSaLsj6PWiaB2
+NEXT_PUBLIC_STRIPE_SUB_TWO=price_4zgLM3mNfOHJiG
+NEXT_PUBLIC_STRIPE_SUB_THREE=price_rrr1THGz1VAOUB
+//NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_qvp6fZgKnZLFuv
+//NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_WcCPwYfAFSKnqs
+
+#Optional blog and form environment variables, if you do not require a blog or form integration you can leave these blank and remove the relevant frontend code.
+NEXT_PUBLIC_FORM_URL=https://formbold.com/s/fake-form
+`}
+					/>
+				</DocumentationSection>
+
+				<DocumentationSection id="environment-variables-blog">
+					<DocumentationTypography variant="h2">
+						CMS blog ENV setup
+					</DocumentationTypography>
+					<DocumentationTypography variant="p">
+						SaaSphere NextJS SaaS Boilerplate uses Sanity for blog management. This is a
+						headless CMS that is simple and easy to use.
+					</DocumentationTypography>
+
+					<DocumentationTypography variant="p">
+						Go to{' '}
+						<Link
+							className="underline hover:no-underline text-primary"
+							href="https://www.sanity.io/"
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							https://www.sanity.io
+						</Link>{' '}
+						, create an account, create a new project from scratch, copy and paste
+						project ID into NEXT_PUBLIC_SANITY_PROJECT_ID. Go to the datasets tab and
+						create a dataset, put this name into NEXT_PUBLIC_SANITY_DATASET, go to
+						/studio on the boilerplate. follow the steps on the screen to verify CORS.
+						You can now add posts through the CMS interface
+					</DocumentationTypography>
+
+					<DocumentationTypography variant="p">
+						Your ENV file should now look something like this.
+					</DocumentationTypography>
+					<CodeBlock
+						enableLineNumbers
+						lines={['39:41']}
+						language="javascript"
+						code={`
+# .env file
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+AUTH_TRUST_HOST=http://localhost:3000
+NEXTAUTH_URL=http://localhost:3000
+
+#Authentication and database setup
+AUTH_DRIZZLE_URL=postgresql://random-user:pass123456@ep-forest-hill-b3x7fg7x-pooler.eu-west-2.aws.neon.tech/random-database?sslmode=require
+AUTH_SECRET=r4nd0m_super_s3cr3t_k3y
+GITHUB_CLIENT_ID=Ty97pkWrmhXDF8yhfho9
+GITHUB_CLIENT_SECRET=1d9824a7e85a8742e29c6cd09e67a103efb8f4c3
+GOOGLE_CLIENT_ID=8064532994112-hqe68lazp87n97kjwo12etpj10p5mp53.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
+
+#File management setup using AWS S3
+AWS_ACCESS_KEY_ID=AKIAZPQRWSXTCHGUVOPN
+AWS_SECRET_ACCESS_KEY=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
+AWS_REGION=us-west-1
+AWS_BUCKET_NAME=random-saas-project-bucket
+
+#Email setup using Resend 
+RESEND_API_KEY=re_9DLWqvYT_A2pjFX8NsxpqeUbJV3oY8tLm
+RESEND_FROM_EMAIL=support@random-saas-project.com 
+//use onboarding@resend.dev if you have not verified a domain on Resend
+
+#Payment setup using Stripe
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+
+//Stripe subscription prices, these needed based on what payment plan/model you choose.
+NEXT_PUBLIC_STRIPE_SUB_ONE=price_dKSaLsj6PWiaB2
+NEXT_PUBLIC_STRIPE_SUB_TWO=price_4zgLM3mNfOHJiG
+NEXT_PUBLIC_STRIPE_SUB_THREE=price_rrr1THGz1VAOUB
+//NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_qvp6fZgKnZLFuv
+//NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_WcCPwYfAFSKnqs
+
+#Optional blog and form environment variables, if you do not require a blog or form integration you can leave these blank and remove the relevant frontend code.
+NEXT_PUBLIC_FORM_URL=https://formbold.com/s/fake-form
+NEXT_PUBLIC_SANITY_PROJECT_ID="poja245"
+NEXT_PUBLIC_SANITY_DATASET="production"
 `}
 					/>
 				</DocumentationSection>
