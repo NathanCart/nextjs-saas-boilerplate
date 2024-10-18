@@ -127,7 +127,7 @@ NEXT_PUBLIC_SANITY_DATASET=
 						functions within the app. Add the following ENVs and and put the values as
 						the base url of your app, for local, this will be http://localhost:3000, for
 						production deployments, this will be the root domain of your app. For
-						example, SaaSphere's would be{' '}
+						example, SaaSphere{"'"}s would be{' '}
 						<span className="italic  text-primary"> https://saasphere.dev</span>
 					</DocumentationTypography>
 
