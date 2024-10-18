@@ -82,7 +82,7 @@ NEXTAUTH_URL=
 
 #Authentication and database setup
 AUTH_DRIZZLE_URL=
-AUTH_SECRET=super_secret_random_string
+AUTH_SECRET=
 GITHUB_CLIENT_ID=
 GITHUB_CLIENT_SECRET=
 GOOGLE_CLIENT_ID=
@@ -202,7 +202,7 @@ NEXTAUTH_URL=http://localhost:3000
 
 #Authentication and database setup
 AUTH_DRIZZLE_URL=
-AUTH_SECRET=super_secret_random_string
+AUTH_SECRET=
 GITHUB_CLIENT_ID=
 GITHUB_CLIENT_SECRET=
 GOOGLE_CLIENT_ID=
@@ -355,7 +355,7 @@ NEXTAUTH_URL=http://localhost:3000
 
 #Authentication and database setup
 AUTH_DRIZZLE_URL=
-AUTH_SECRET=super_secret_random_string
+AUTH_SECRET=
 GITHUB_CLIENT_ID=
 GITHUB_CLIENT_SECRET=
 GOOGLE_CLIENT_ID=
@@ -427,7 +427,7 @@ NEXTAUTH_URL=http://localhost:3000
 
 #Authentication and database setup
 AUTH_DRIZZLE_URL=
-AUTH_SECRET=super_secret_random_string
+AUTH_SECRET=
 GITHUB_CLIENT_ID=
 GITHUB_CLIENT_SECRET=
 GOOGLE_CLIENT_ID=
@@ -545,7 +545,7 @@ NEXTAUTH_URL=http://localhost:3000
 
 #Authentication and database setup
 AUTH_DRIZZLE_URL=
-AUTH_SECRET=super_secret_random_string
+AUTH_SECRET=
 GITHUB_CLIENT_ID=
 GITHUB_CLIENT_SECRET=
 GOOGLE_CLIENT_ID=
