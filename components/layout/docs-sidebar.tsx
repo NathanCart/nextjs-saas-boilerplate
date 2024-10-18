@@ -40,7 +40,7 @@ export function DocsSidebar() {
 					link: '/docs#environment-variables',
 					icon: <FileScan size={20} />,
 					visible: true,
-					children: [
+					nested: [
 						{
 							text: 'Core',
 							link: '/docs#environment-variables-core',
@@ -121,7 +121,7 @@ export function DocsSidebar() {
 										text={item.text}
 										link={item.link}
 										icon={item.icon}
-										children={item.children}
+										nested={item.nested}
 									/>
 								);
 							})}

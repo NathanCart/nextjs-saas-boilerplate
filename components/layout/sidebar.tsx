@@ -35,7 +35,7 @@ export interface SidebarItemProps {
 	icon?: React.ReactNode;
 	prefetch?: boolean;
 	onClick?: () => void;
-	children: SideBarItem;
+	nested: SideBarItem;
 }
 export function SidebarItem(props: SidebarItemProps) {
 	const { prefetch = true } = props;
@@ -63,16 +63,16 @@ export function SidebarItem(props: SidebarItemProps) {
 					{props.text}
 				</Button>
 			</Link>
-			{props.children && (
+			{props.nested && (
 				<div className="pl-4">
-					{props.children.map((child) => (
+					{props.nested.map((child) => (
 						<SidebarItem
 							size="sm"
 							key={child.link}
 							link={child.link}
 							text={child.text}
 							icon={child.icon}
-							children={child.children}
+							nested={child.children}
 						/>
 					))}
 				</div>
