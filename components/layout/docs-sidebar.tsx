@@ -25,7 +25,7 @@ export function DocsSidebar() {
 			const scrollPosition = window.scrollY; // Current scroll position
 			const sections = document.querySelectorAll('.docs-section'); // Select section headers (modify if needed)
 
-			sections.forEach((section) => {
+			sections.forEach((section: any) => {
 				const sectionOffsetTop = section.offsetTop; // Distance of the section from the top
 				const sectionHeight = section.offsetHeight;
 
@@ -44,8 +44,6 @@ export function DocsSidebar() {
 			window.removeEventListener('scroll', handleScroll);
 		};
 	}, []);
-
-	console.log(currentSection, 'current section');
 
 	const SIDEBAR_ITEMS = [
 		{
@@ -178,7 +176,6 @@ export function DocsSidebar() {
 							{group.items.map((item, index) => {
 								if (!item.visible) return null;
 
-								console.log(item, 'item data');
 								return (
 									<SidebarItem
 										key={index}
