@@ -92,7 +92,7 @@ GOOGLE_CLIENT_SECRET=
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 AWS_REGION=
-AWS_BUCKET_NAME=bucket-name
+AWS_BUCKET_NAME=
 
 #Email setup using Resend 
 RESEND_API_KEY=
@@ -327,8 +327,8 @@ GOOGLE_CLIENT_SECRET=
 `}
 					/>
 					<DocumentationTypography variant="p">
-						Set AWS_REGION= AWS_BUCKET_NAME=bucket-name ENVs to your buckets region and
-						buckets name. These can be found on the S3 homepage as shown below.
+						Set AWS_REGION= AWS_BUCKET_NAME= ENVs to your buckets region and buckets
+						name. These can be found on the S3 homepage as shown below.
 					</DocumentationTypography>
 					<Image
 						className="rounded-lg border-2 border-border object-cover"
@@ -364,8 +364,8 @@ GOOGLE_CLIENT_SECRET=
 #File management setup using AWS S3
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
-AWS_REGION=us-west-1
-AWS_BUCKET_NAME=bucket-name
+AWS_REGION=
+AWS_BUCKET_NAME=
 `}
 					/>{' '}
 				</DocumentationSection>
@@ -436,8 +436,8 @@ GOOGLE_CLIENT_SECRET=
 #File management setup using AWS S3
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
-AWS_REGION=us-west-1
-AWS_BUCKET_NAME=bucket-name
+AWS_REGION=
+AWS_BUCKET_NAME=
 
 #Email setup using Resend 
 RESEND_API_KEY=
@@ -554,8 +554,8 @@ GOOGLE_CLIENT_SECRET=
 #File management setup using AWS S3
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
-AWS_REGION=us-west-1
-AWS_BUCKET_NAME=bucket-name
+AWS_REGION=
+AWS_BUCKET_NAME=
 
 #Email setup using Resend 
 RESEND_API_KEY=re_9DLWqvYT_A2pjFX8NsxpqeUbJV3oY8tLm
