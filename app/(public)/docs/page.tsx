@@ -104,11 +104,11 @@ STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 
 //Stripe subscription prices, these needed based on what payment plan/model you choose.
-NEXT_PUBLIC_STRIPE_SUB_ONE=price_dKSaLsj6PWiaB2
-NEXT_PUBLIC_STRIPE_SUB_TWO=price_4zgLM3mNfOHJiG
-NEXT_PUBLIC_STRIPE_SUB_THREE=price_rrr1THGz1VAOUB
-NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_qvp6fZgKnZLFuv
-NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_WcCPwYfAFSKnqs
+NEXT_PUBLIC_STRIPE_SUB_ONE=
+NEXT_PUBLIC_STRIPE_SUB_TWO=
+NEXT_PUBLIC_STRIPE_SUB_THREE=
+NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=
+NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=
 
 #Optional blog and form environment variables, if you do not require a blog or form integration you can leave these blank and remove the relevant frontend code.
 NEXT_PUBLIC_FORM_URL=
@@ -503,11 +503,11 @@ RESEND_FROM_EMAIL=support@random-saas-project.com
 					<CodeBlock
 						language="javascript"
 						code={`
-NEXT_PUBLIC_STRIPE_SUB_ONE=price_dKSaLsj6PWiaB2
-NEXT_PUBLIC_STRIPE_SUB_TWO=price_4zgLM3mNfOHJiG
-NEXT_PUBLIC_STRIPE_SUB_THREE=price_rrr1THGz1VAOUB
-NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_qvp6fZgKnZLFuv
-NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_WcCPwYfAFSKnqs
+NEXT_PUBLIC_STRIPE_SUB_ONE=
+NEXT_PUBLIC_STRIPE_SUB_TWO=
+NEXT_PUBLIC_STRIPE_SUB_THREE=
+NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=
+NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=
 `}
 					/>
 					<DocumentationTypography variant="p">
@@ -541,16 +541,16 @@ NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_WcCPwYfAFSKnqs
 					<DocumentationTypography variant="p">
 						On stripe dashboard search for webhooks, create webhook. Add the following
 						endpoint to your production webhook url.
-						<ul className="list-decimal ml-4 ">
-							<li className="ml-4">payment_intent.succeeded</li>
-							<li className="ml-4">customer.subscription.created</li>
-							<li className="ml-4">customer.subscription.updated</li>
-							<li className="ml-4">customer.subscription.deleted</li>
-							<li className="ml-4">invoice.payment_succeeded</li>
-							<li className="ml-4">invoice.payment_failed</li>
-							<li className="ml-4">checkout.session.completed</li>
-						</ul>
 					</DocumentationTypography>
+					<ul className="list-decimal ml-4 ">
+						<li className="ml-4">payment_intent.succeeded</li>
+						<li className="ml-4">customer.subscription.created</li>
+						<li className="ml-4">customer.subscription.updated</li>
+						<li className="ml-4">customer.subscription.deleted</li>
+						<li className="ml-4">invoice.payment_succeeded</li>
+						<li className="ml-4">invoice.payment_failed</li>
+						<li className="ml-4">checkout.session.completed</li>
+					</ul>
 					<DocumentationTypography variant="p">
 						Press continue and then add your public path to the stripe api route, e.g
 						for me https://saasphere.dev/api/webhooks/stripe. Copy this secret into your
@@ -601,16 +601,16 @@ RESEND_FROM_EMAIL=support@random-saas-project.com
 //use onboarding@resend.dev if you have not verified a domain on Resend
 
 #Payment setup using Stripe
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_51XyewLGm4K65Sy961ocIzBSHb9ZvGxXuQOVTG9w1a5fPwjwz8CYUivOBWlmhHm8fQXuDQSxm43387o9ZUSDZ7w000z7ABCDefg
+STRIPE_SECRET_KEY=sk_test_51XyewLGm4K65Sy9dqztp7vfdXgrBHgH2KCXA65dx5rgXg0NKZPt3CcbBytevaWDBCZP5m1tXzWfQuoKJBiNtKY100l7X9lLxyz
+STRIPE_WEBHOOK_SECRET=whsec_8aa9460e4eac9b5bfa36a90b858a55788396b2b61c947835d6461b11e9f8727e
 
-//Stripe subscription prices, these needed based on what payment plan/model you choose.
-NEXT_PUBLIC_STRIPE_SUB_ONE=price_dKSaLsj6PWiaB2
-NEXT_PUBLIC_STRIPE_SUB_TWO=price_4zgLM3mNfOHJiG
-NEXT_PUBLIC_STRIPE_SUB_THREE=price_rrr1THGz1VAOUB
-//NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_qvp6fZgKnZLFuv
-//NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_WcCPwYfAFSKnqs
+// Stripe subscription prices, these needed based on what payment plan/model you choose.
+NEXT_PUBLIC_STRIPE_SUB_ONE=price_1XzFu7LGm4K65Sy9rxN4h1Co
+NEXT_PUBLIC_STRIPE_SUB_TWO=price_1XzFuoLGm4K65Sy9HVFqJYAR
+NEXT_PUBLIC_STRIPE_SUB_THREE=price_1XzFv7LGm4K65Sy9tzfJaVBB
+// NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_1Q7LvlLGm4K65Sy9lKYsCFDS
+// NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_1Q7LwRLGm4K65Sy9SrPT6V43
 
 `}
 					/>
@@ -674,16 +674,16 @@ RESEND_FROM_EMAIL=support@random-saas-project.com
 //use onboarding@resend.dev if you have not verified a domain on Resend
 
 #Payment setup using Stripe
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_51XyewLGm4K65Sy961ocIzBSHb9ZvGxXuQOVTG9w1a5fPwjwz8CYUivOBWlmhHm8fQXuDQSxm43387o9ZUSDZ7w000z7ABCDefg
+STRIPE_SECRET_KEY=sk_test_51XyewLGm4K65Sy9dqztp7vfdXgrBHgH2KCXA65dx5rgXg0NKZPt3CcbBytevaWDBCZP5m1tXzWfQuoKJBiNtKY100l7X9lLxyz
+STRIPE_WEBHOOK_SECRET=whsec_8aa9460e4eac9b5bfa36a90b858a55788396b2b61c947835d6461b11e9f8727e
 
-//Stripe subscription prices, these needed based on what payment plan/model you choose.
-NEXT_PUBLIC_STRIPE_SUB_ONE=price_dKSaLsj6PWiaB2
-NEXT_PUBLIC_STRIPE_SUB_TWO=price_4zgLM3mNfOHJiG
-NEXT_PUBLIC_STRIPE_SUB_THREE=price_rrr1THGz1VAOUB
-//NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_qvp6fZgKnZLFuv
-//NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_WcCPwYfAFSKnqs
+// Stripe subscription prices, these needed based on what payment plan/model you choose.
+NEXT_PUBLIC_STRIPE_SUB_ONE=price_1XzFu7LGm4K65Sy9rxN4h1Co
+NEXT_PUBLIC_STRIPE_SUB_TWO=price_1XzFuoLGm4K65Sy9HVFqJYAR
+NEXT_PUBLIC_STRIPE_SUB_THREE=price_1XzFv7LGm4K65Sy9tzfJaVBB
+// NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_1Q7LvlLGm4K65Sy9lKYsCFDS
+// NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_1Q7LwRLGm4K65Sy9SrPT6V43
 
 #Optional blog and form environment variables, if you do not require a blog or form integration you can leave these blank and remove the relevant frontend code.
 NEXT_PUBLIC_FORM_URL=https://formbold.com/s/fake-form
@@ -750,16 +750,16 @@ RESEND_FROM_EMAIL=support@random-saas-project.com
 //use onboarding@resend.dev if you have not verified a domain on Resend
 
 #Payment setup using Stripe
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_51XyewLGm4K65Sy961ocIzBSHb9ZvGxXuQOVTG9w1a5fPwjwz8CYUivOBWlmhHm8fQXuDQSxm43387o9ZUSDZ7w000z7ABCDefg
+STRIPE_SECRET_KEY=sk_test_51XyewLGm4K65Sy9dqztp7vfdXgrBHgH2KCXA65dx5rgXg0NKZPt3CcbBytevaWDBCZP5m1tXzWfQuoKJBiNtKY100l7X9lLxyz
+STRIPE_WEBHOOK_SECRET=whsec_8aa9460e4eac9b5bfa36a90b858a55788396b2b61c947835d6461b11e9f8727e
 
-//Stripe subscription prices, these needed based on what payment plan/model you choose.
-NEXT_PUBLIC_STRIPE_SUB_ONE=price_dKSaLsj6PWiaB2
-NEXT_PUBLIC_STRIPE_SUB_TWO=price_4zgLM3mNfOHJiG
-NEXT_PUBLIC_STRIPE_SUB_THREE=price_rrr1THGz1VAOUB
-//NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_qvp6fZgKnZLFuv
-//NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_WcCPwYfAFSKnqs
+// Stripe subscription prices, these needed based on what payment plan/model you choose.
+NEXT_PUBLIC_STRIPE_SUB_ONE=price_1XzFu7LGm4K65Sy9rxN4h1Co
+NEXT_PUBLIC_STRIPE_SUB_TWO=price_1XzFuoLGm4K65Sy9HVFqJYAR
+NEXT_PUBLIC_STRIPE_SUB_THREE=price_1XzFv7LGm4K65Sy9tzfJaVBB
+// NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_1Q7LvlLGm4K65Sy9lKYsCFDS
+// NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_1Q7LwRLGm4K65Sy9SrPT6V43
 
 #Optional blog and form environment variables, if you do not require a blog or form integration you can leave these blank and remove the relevant frontend code.
 NEXT_PUBLIC_FORM_URL=https://formbold.com/s/fake-form
