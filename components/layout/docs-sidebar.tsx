@@ -20,7 +20,7 @@ import { NavigationMobileDrawer } from './navigation-mobile-drawer';
 export function DocsSidebar() {
 	const SIDEBAR_ITEMS = [
 		{
-			name: 'Getting setup',
+			name: 'Essential information',
 
 			items: [
 				{
