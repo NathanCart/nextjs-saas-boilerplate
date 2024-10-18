@@ -35,7 +35,7 @@ export interface SidebarItemProps {
 	icon?: React.ReactNode;
 	prefetch?: boolean;
 	onClick?: () => void;
-	nested: SideBarItem;
+	nested?: SideBarItem;
 }
 export function SidebarItem(props: SidebarItemProps) {
 	const { prefetch = true } = props;
