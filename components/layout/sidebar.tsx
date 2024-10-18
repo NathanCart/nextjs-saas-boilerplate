@@ -11,15 +11,17 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '../ui/button';
 
-type SideBarItem =
+export type SideBarItem =
 	| {
 			text: string;
 			link: string;
 			icon?: React.ReactNode;
 			visible: boolean;
+			active?: boolean;
 			children?:
 				| {
 						text: string;
+						active?: boolean;
 						link: string;
 						icon?: React.ReactNode;
 						visible: boolean;
@@ -36,20 +38,22 @@ export interface SidebarItemProps {
 	prefetch?: boolean;
 	onClick?: () => void;
 	nested?: SideBarItem;
+	active?: boolean;
 }
 export function SidebarItem(props: SidebarItemProps) {
 	const { prefetch = true } = props;
 	const pathName = usePathname();
 
-	const isActive = pathName === props.link;
+	const isActive = props.active ?? pathName === props.link;
+
 	return (
-		<div>
-			<Link
-				href={props.link}
-				prefetch={prefetch}
-				onClick={() => props?.onClick?.()}
-				className="h-9"
-			>
+		<div
+			onClick={(e) => {
+				e.preventDefault();
+				props?.onClick?.();
+			}}
+		>
+			<Link href={props.link} prefetch={prefetch} className="h-9">
 				<Button
 					size="sm"
 					className={`w-full  justify-start px-4 flex items-center gap-2 ${
@@ -73,6 +77,7 @@ export function SidebarItem(props: SidebarItemProps) {
 							text={child.text}
 							icon={child.icon}
 							nested={child.children}
+							active={child.active}
 						/>
 					))}
 				</div>
