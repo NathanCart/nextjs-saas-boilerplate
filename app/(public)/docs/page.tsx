@@ -82,7 +82,7 @@ NEXTAUTH_URL=
 
 #Authentication and database setup
 AUTH_DRIZZLE_URL=
-AUTH_SECRET=
+AUTH_SECRET=super_secret_random_string
 GITHUB_CLIENT_ID=
 GITHUB_CLIENT_SECRET=
 GOOGLE_CLIENT_ID=
@@ -92,7 +92,7 @@ GOOGLE_CLIENT_SECRET=
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 AWS_REGION=
-AWS_BUCKET_NAME=
+AWS_BUCKET_NAME=bucket-name
 
 #Email setup using Resend 
 RESEND_API_KEY=
@@ -104,11 +104,11 @@ STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 
 //Stripe subscription prices, these needed based on what payment plan/model you choose.
-//NEXT_PUBLIC_STRIPE_SUB_ONE=price_1PzFu7LGm4K65Sy9rxN4h1Co
-//NEXT_PUBLIC_STRIPE_SUB_TWO=price_1PzFuoLGm4K65Sy9HVFqJYAR
-//NEXT_PUBLIC_STRIPE_SUB_THREE=price_1PzFv7LGm4K65Sy9tzfJaVBB
-//NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_1Q7LvlLGm4K65Sy9lKYsCFDS
-//NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_1Q7LwRLGm4K65Sy9SrPT6V43
+//NEXT_PUBLIC_STRIPE_SUB_ONE=
+//NEXT_PUBLIC_STRIPE_SUB_TWO=
+//NEXT_PUBLIC_STRIPE_SUB_THREE=
+//NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=
+//NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=
 
 #Optional blog and form environment variables, if you do not require a blog or form integration you can leave these blank and remove the relevant frontend code.
 NEXT_PUBLIC_FORM_URL=
@@ -201,12 +201,12 @@ AUTH_TRUST_HOST=http://localhost:3000
 NEXTAUTH_URL=http://localhost:3000
 
 #Authentication and database setup
-AUTH_DRIZZLE_URL=postgresql://random-user:pass123456@ep-forest-hill-b3x7fg7x-pooler.eu-west-2.aws.neon.tech/random-database?sslmode=require
-AUTH_SECRET=r4nd0m_super_s3cr3t_k3y
-GITHUB_CLIENT_ID=Ty97pkWrmhXDF8yhfho9
-GITHUB_CLIENT_SECRET=1d9824a7e85a8742e29c6cd09e67a103efb8f4c3
-GOOGLE_CLIENT_ID=8064532994112-hqe68lazp87n97kjwo12etpj10p5mp53.apps.googleusercontent.com
-GOOGLE_CLIENT_SECRET=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
+AUTH_DRIZZLE_URL=
+AUTH_SECRET=super_secret_random_string
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 `}
 					/>
 					<DocumentationTypography variant="p">
@@ -327,8 +327,8 @@ GOOGLE_CLIENT_SECRET=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
 `}
 					/>
 					<DocumentationTypography variant="p">
-						Set AWS_REGION= AWS_BUCKET_NAME= ENVs to your buckets region and buckets
-						name. These can be found on the S3 homepage as shown below.
+						Set AWS_REGION= AWS_BUCKET_NAME=bucket-name ENVs to your buckets region and
+						buckets name. These can be found on the S3 homepage as shown below.
 					</DocumentationTypography>
 					<Image
 						className="rounded-lg border-2 border-border object-cover"
@@ -354,18 +354,18 @@ AUTH_TRUST_HOST=http://localhost:3000
 NEXTAUTH_URL=http://localhost:3000
 
 #Authentication and database setup
-AUTH_DRIZZLE_URL=postgresql://random-user:pass123456@ep-forest-hill-b3x7fg7x-pooler.eu-west-2.aws.neon.tech/random-database?sslmode=require
-AUTH_SECRET=r4nd0m_super_s3cr3t_k3y
-GITHUB_CLIENT_ID=Ty97pkWrmhXDF8yhfho9
-GITHUB_CLIENT_SECRET=1d9824a7e85a8742e29c6cd09e67a103efb8f4c3
-GOOGLE_CLIENT_ID=8064532994112-hqe68lazp87n97kjwo12etpj10p5mp53.apps.googleusercontent.com
-GOOGLE_CLIENT_SECRET=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
+AUTH_DRIZZLE_URL=
+AUTH_SECRET=super_secret_random_string
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 
 #File management setup using AWS S3
-AWS_ACCESS_KEY_ID=AKIAZPQRWSXTCHGUVOPN
-AWS_SECRET_ACCESS_KEY=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
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
 AWS_REGION=us-west-1
-AWS_BUCKET_NAME=random-saas-project-bucket
+AWS_BUCKET_NAME=bucket-name
 `}
 					/>{' '}
 				</DocumentationSection>
@@ -426,21 +426,21 @@ AUTH_TRUST_HOST=http://localhost:3000
 NEXTAUTH_URL=http://localhost:3000
 
 #Authentication and database setup
-AUTH_DRIZZLE_URL=postgresql://random-user:pass123456@ep-forest-hill-b3x7fg7x-pooler.eu-west-2.aws.neon.tech/random-database?sslmode=require
-AUTH_SECRET=r4nd0m_super_s3cr3t_k3y
-GITHUB_CLIENT_ID=Ty97pkWrmhXDF8yhfho9
-GITHUB_CLIENT_SECRET=1d9824a7e85a8742e29c6cd09e67a103efb8f4c3
-GOOGLE_CLIENT_ID=8064532994112-hqe68lazp87n97kjwo12etpj10p5mp53.apps.googleusercontent.com
-GOOGLE_CLIENT_SECRET=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
+AUTH_DRIZZLE_URL=
+AUTH_SECRET=super_secret_random_string
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 
 #File management setup using AWS S3
-AWS_ACCESS_KEY_ID=AKIAZPQRWSXTCHGUVOPN
-AWS_SECRET_ACCESS_KEY=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
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
 AWS_REGION=us-west-1
-AWS_BUCKET_NAME=random-saas-project-bucket
+AWS_BUCKET_NAME=bucket-name
 
 #Email setup using Resend 
-RESEND_API_KEY=re_9DLWqvYT_A2pjFX8NsxpqeUbJV3oY8tLm
+RESEND_API_KEY=
 RESEND_FROM_EMAIL=support@random-saas-project.com 
 //use onboarding@resend.dev if you have not verified a domain on Resend
 `}
@@ -544,18 +544,18 @@ AUTH_TRUST_HOST=http://localhost:3000
 NEXTAUTH_URL=http://localhost:3000
 
 #Authentication and database setup
-AUTH_DRIZZLE_URL=postgresql://random-user:pass123456@ep-forest-hill-b3x7fg7x-pooler.eu-west-2.aws.neon.tech/random-database?sslmode=require
-AUTH_SECRET=r4nd0m_super_s3cr3t_k3y
-GITHUB_CLIENT_ID=Ty97pkWrmhXDF8yhfho9
-GITHUB_CLIENT_SECRET=1d9824a7e85a8742e29c6cd09e67a103efb8f4c3
-GOOGLE_CLIENT_ID=8064532994112-hqe68lazp87n97kjwo12etpj10p5mp53.apps.googleusercontent.com
-GOOGLE_CLIENT_SECRET=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
+AUTH_DRIZZLE_URL=
+AUTH_SECRET=super_secret_random_string
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 
 #File management setup using AWS S3
-AWS_ACCESS_KEY_ID=AKIAZPQRWSXTCHGUVOPN
-AWS_SECRET_ACCESS_KEY=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
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
 AWS_REGION=us-west-1
-AWS_BUCKET_NAME=random-saas-project-bucket
+AWS_BUCKET_NAME=bucket-name
 
 #Email setup using Resend 
 RESEND_API_KEY=re_9DLWqvYT_A2pjFX8NsxpqeUbJV3oY8tLm
@@ -568,11 +568,11 @@ STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 
 //Stripe subscription prices, these needed based on what payment plan/model you choose.
-NEXT_PUBLIC_STRIPE_SUB_ONE=price_1PzFu7LGm4K65Sy9rxN4h1Co
-NEXT_PUBLIC_STRIPE_SUB_TWO=price_1PzFuoLGm4K65Sy9HVFqJYAR
-NEXT_PUBLIC_STRIPE_SUB_THREE=price_1PzFv7LGm4K65Sy9tzfJaVBB
-//NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=price_1Q7LvlLGm4K65Sy9lKYsCFDS
-//NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=price_1Q7LwRLGm4K65Sy9SrPT6V43
+NEXT_PUBLIC_STRIPE_SUB_ONE=
+NEXT_PUBLIC_STRIPE_SUB_TWO=
+NEXT_PUBLIC_STRIPE_SUB_THREE=
+//NEXT_PUBLIC_STRIPE_ONE_TIME_ONE=
+//NEXT_PUBLIC_STRIPE_ONE_TIME_TWO=
 
 `}
 					/>
